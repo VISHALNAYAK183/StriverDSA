@@ -25,8 +25,6 @@ class Uni {
                 j++;
             }
         }
-
-        // remaining arr1
         while (i < arr1.length) {
             if (list.size() == 0 || list.get(list.size() - 1) != arr1[i]) {
                 list.add(arr1[i]);
@@ -34,7 +32,7 @@ class Uni {
             i++;
         }
 
-        // remaining arr2
+      
         while (j < arr2.length) {
             if (list.size() == 0 || list.get(list.size() - 1) != arr2[j]) {
                 list.add(arr2[j]);

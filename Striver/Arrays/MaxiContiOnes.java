@@ -22,11 +22,13 @@ public class MaxiContiOnes {
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         MaxiOne obj=new MaxiOne();
+        System.out.println("Enter sixze of aary:");
         int num=sc.nextInt();
         int[] arr=new int[num];
+        System.out.println("Enter array values:");
         for(int i=0;i<arr.length;i++){
             arr[i]=sc.nextInt();
         }
-        System.out.println(obj.maxione(arr));
+        System.out.println("Output"+obj.maxione(arr));
     }
 }

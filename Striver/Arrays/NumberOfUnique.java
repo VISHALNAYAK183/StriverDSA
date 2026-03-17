@@ -15,6 +15,7 @@ class NUnique{
     }
 }
 
+
 public class NumberOfUnique {
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);

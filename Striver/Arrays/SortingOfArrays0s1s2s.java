@@ -12,7 +12,7 @@ class SrtArray {
                 int temp=arr[mid];
                 arr[mid]=arr[low];
                 arr[low]=temp;
-                low++;
+                low++;  
                 mid++;
             }else if(arr[mid]==1){
                 mid++;

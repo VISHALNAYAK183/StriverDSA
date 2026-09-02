@@ -1,3 +1,4 @@
+package Deletion;
 
 class Node {
     int data;
@@ -29,12 +30,42 @@ class Traversal {
     return head;
 
 }
-    
+   private static int LengthOfLL(Node head){
+        int cnt=0;
+        Node temp=head;
+        while(temp!=null){
+            cnt++;
+            temp=temp.next;
+        }
+        return cnt;
+    }
+
+    //Search IN LL
+
+    private static boolean checkInLL(Node head, int val){
+        Node temp=head;
+        while(temp!=null){
+            if(temp.data==val){
+                return true;
+            }
+            temp=temp.next;
+        }
+        return false;
+    }
     public static void main(String[] args) {
         int[] arr = { 2, 4, 5, 3 };
         Node head = convert2all(arr);
         System.out.print(head.data);
 
+
+        //Traversal part
+        Node temp=head;
+        while(temp!=null){
+            System.out.println("Node"+" "+temp.data);
+            temp=temp.next;
+        }
+        System.out.println("Count"+LengthOfLL(head));
+         System.out.println("Search"+checkInLL(head,10));
     }
 }
 

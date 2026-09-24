@@ -33,18 +33,17 @@ public class InsertBeforeX {
 
   
     private static Node insertBeforeX(Node head, int x,int element) {
-       Node temp=head;
-        while(temp!=null){
-            if(temp.next.data==x){
-                Node newNode=new Node(element);
-                newNode.next=temp.next;
-                temp.next=newNode;
-                break;
-            }
-            temp=temp.next;
+     Node temp=head;
+     while(temp!=null){
+        if(temp.next.data==x){
+            Node newNode=new Node(element);
+            newNode.next=temp.next;
+            temp.next=newNode;
+            break;
         }
-        return head;
-
+        temp=temp.next;
+     }
+     return head;
     }
 
     // Function to print Linked List

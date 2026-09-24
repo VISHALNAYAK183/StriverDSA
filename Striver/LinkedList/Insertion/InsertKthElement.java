@@ -52,7 +52,7 @@ public class InsertKthElement {
                 count++;
                 if(count==index-1){
                         Node res=new Node(element);
-                          res.next=temp.next;
+                        res.next=temp.next;
                         temp.next=res;
                       
                         return head;
